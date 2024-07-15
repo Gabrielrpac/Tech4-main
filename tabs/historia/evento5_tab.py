@@ -28,7 +28,7 @@ class HistoriaEvento5Tab(EventoTab):
 
             st.markdown(
                 f"""
-                O período de interesse analisado à seguir abrange não apenas a Primavera Árabe, mas também os eventos que surgiram a partir dela, como a Guerra Civil na Líbia e o Conflito na Síria. Esses eventos combinados contribuíram para a elevação dos preços do barril de petróleo. De setembro de 2010 até junho de 2011, o preço aumentou aproximadamente :green[{format_number(self.variacao_positiva, '%.2f')}%], tendo sua mínima em :blue[US$ {format_number(self.min, '%.2f')}] e saltando para a máxima de :blue[US$ {format_number(self.max, '%.2f')}].
+                O período de interesse analisado à seguir abrange não apenas a Primavera Árabe, mas também os eventos que surgiram a partir dela, como a Guerra Civil na Líbia e o Conflito na Síria. Esses eventos combinados contribuíram para a elevação dos preços do barril de petróleo. De setembro de 2010 até junho de 2011, o preço aumentou aproximadamente :green[{format_number(self.variacao_positiva, '%.2f')}%], tendo sua mínima em :green[US$ {format_number(self.min, '%.2f')}] e saltando para a máxima de :green[US$ {format_number(self.max, '%.2f')}].
             """
             )
 

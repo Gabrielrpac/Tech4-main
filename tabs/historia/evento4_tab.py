@@ -30,7 +30,7 @@ class HistoriaEvento4Tab(EventoTab):
 
             st.markdown(
                 f"""
-                Em suma, a crise financeira de 2008 afetou o preço do petróleo Brent principalmente através da redução da demanda global por energia, da volatilidade nos mercados financeiros, das políticas monetárias adotadas pelos bancos centrais e das intervenções governamentais para estabilizar a economia global. O período de interesse analisado (linha em vermelho) mostra uma variação incrível de :red[{format_number(self.variacao_negativa, '%.2f')}%], ou seja, o preço caiu de sua máxima de :blue[US$ {format_number(self.max, '%.2f')}] para a mínima de :blue[US$ {format_number(self.min, '%.2f')}].
+                Em suma, a crise financeira de 2008 afetou o preço do petróleo Brent principalmente através da redução da demanda global por energia, da volatilidade nos mercados financeiros, das políticas monetárias adotadas pelos bancos centrais e das intervenções governamentais para estabilizar a economia global. O período de interesse analisado (linha em vermelho) mostra uma variação incrível de :red[{format_number(self.variacao_negativa, '%.2f')}%], ou seja, o preço caiu de sua máxima de :green[US$ {format_number(self.max, '%.2f')}] para a mínima de :green[US$ {format_number(self.min, '%.2f')}].
             """
             )
 

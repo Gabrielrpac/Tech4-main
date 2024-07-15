@@ -30,7 +30,7 @@ class HistoriaEvento8Tab(EventoTab):
 
             st.markdown(
                 f"""
-                A invasão criou uma grande incerteza geopolítica, uma vez que a Rússia é um dos maiores produtores e exportadores de petróleo do mundo. A perspectiva de interrupções no fornecimento de petróleo russo elevou os preços. Os efeitos se mantiveram por volta de Julho/2022, quando o preço começou a estabilziar em patamares mais baixos. O valor máximo atingido durante o período de interesse foi de :blue[US$ {format_number(self.max, '%.2f')}] e o valor mínimo foi de :blue[US$ {format_number(self.min, '%.2f')}], com uma variação de :green[{format_number(self.variacao_positiva, '%.2f')}%].
+                A invasão criou uma grande incerteza geopolítica, uma vez que a Rússia é um dos maiores produtores e exportadores de petróleo do mundo. A perspectiva de interrupções no fornecimento de petróleo russo elevou os preços. Os efeitos se mantiveram por volta de Julho/2022, quando o preço começou a estabilziar em patamares mais baixos. O valor máximo atingido durante o período de interesse foi de :green[US$ {format_number(self.max, '%.2f')}] e o valor mínimo foi de :green[US$ {format_number(self.min, '%.2f')}], com uma variação de :green[{format_number(self.variacao_positiva, '%.2f')}%].
             """
             )
 

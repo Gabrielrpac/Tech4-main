@@ -31,7 +31,7 @@ O atentado de 11 de setembro de 2001 consistiu em uma série de ataques terroris
 
             st.markdown(
                 f"""
-                Analisando o gráfico, é possível observar uma queda forte no preço do barril de petróleo logo após os acontecimentos. De forma geral, no período de interesse analisado, houve uma variação de cerca de :red[{format_number(self.variacao_negativa, '%.2f')}%], caindo de :blue[US$ {format_number(self.max, '%.2f')}] para :blue[US$ {format_number(self.min, '%.2f')}] no seu menor nível no péríodo. Vale ressaltar que nos meses seguintes, o preço continuou com tendência de baixa.
+                Analisando o gráfico, é possível observar uma queda forte no preço do barril de petróleo logo após os acontecimentos. De forma geral, no período de interesse analisado, houve uma variação de cerca de :red[{format_number(self.variacao_negativa, '%.2f')}%], caindo de :green[US$ {format_number(self.max, '%.2f')}] para :green[US$ {format_number(self.min, '%.2f')}] no seu menor nível no péríodo. Vale ressaltar que nos meses seguintes, o preço continuou com tendência de baixa.
             """
             )
 

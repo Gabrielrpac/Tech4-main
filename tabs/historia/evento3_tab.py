@@ -28,7 +28,7 @@ class HistoriaEvento3Tab(EventoTab):
 
             st.markdown(
                 f"""
-                Podemos notar que a Guerra do Iraque teve um impacto significativo no preço do barril de petróleo. Desde o seu início em 2003, até a metade 2006 podemos observar um aumento expressivo de :blue[US$ {format_number(self.min, '%.2f')}] para :blue[US$ {format_number(self.max, '%.2f')}], o que representa um aumento de :green[{format_number(self.variacao_positiva, '%.2f')}%] no período.
+                Podemos notar que a Guerra do Iraque teve um impacto significativo no preço do barril de petróleo. Desde o seu início em 2003, até a metade 2006 podemos observar um aumento expressivo de :green[US$ {format_number(self.min, '%.2f')}] para :green[US$ {format_number(self.max, '%.2f')}], o que representa um aumento de :green[{format_number(self.variacao_positiva, '%.2f')}%] no período.
             """
             )
 

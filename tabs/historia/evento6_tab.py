@@ -30,7 +30,7 @@ class HistoriaEvento6Tab(EventoTab):
 
             st.markdown(
                 f"""
-                O próximo período de interesse analisado encontra-se entre Junho/2014 e Março/2016.  Foi uma época na qual a produção de petróleo estava em alta mas a demanda em baixa. Como todos sabemos, o mercado é regido pela lei da oferta e demanda e portanto, quando há muito de um produto disponível no mercado mas pouca demanda por ele, seu preço sofrerá uma grande desvalorização. Após atingir uma máxima de :blue[US$ {format_number(self.max, '%.2f')}], o preço do barril chegou a cair para a mínima de :blue[US$ {format_number(self.min, '%.2f')}] no período, o que representa uma variação de :red[{format_number(self.variacao_negativa, '%.2f')}%] no preço.
+                O próximo período de interesse analisado encontra-se entre Junho/2014 e Março/2016.  Foi uma época na qual a produção de petróleo estava em alta mas a demanda em baixa. Como todos sabemos, o mercado é regido pela lei da oferta e demanda e portanto, quando há muito de um produto disponível no mercado mas pouca demanda por ele, seu preço sofrerá uma grande desvalorização. Após atingir uma máxima de :green[US$ {format_number(self.max, '%.2f')}], o preço do barril chegou a cair para a mínima de :green[US$ {format_number(self.min, '%.2f')}] no período, o que representa uma variação de :red[{format_number(self.variacao_negativa, '%.2f')}%] no preço.
             """
             )
 
