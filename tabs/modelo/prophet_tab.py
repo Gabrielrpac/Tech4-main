@@ -267,11 +267,30 @@ class ModeloProphetTab(TabInterface):
                 Ao executar o modelo, nossa data inicia-se em :green[{DATA_INICIAL.strftime("%d/%m/%Y")}] e está limitada em 120 dias visando diminuir as métricas de erro.
             """
             )
-
         with st.container():
-            col, _ = st.columns([2, 6])
+                col, _ = st.columns([2, 6])
 
-            with col:
-                min = DATA_INICIAL
-                max_date = DATA_INICIAL + timedelta(days=120)
-            self.predict(min, max_date)
+                with col:
+                    min = DATA_INICIAL
+                    max_date = DATA_INICIAL + timedelta(days=120)
+                    end_date = st.date_input(
+                        "Data máxima de previsão",
+                        key="dt_input_prophet",
+                        min_value=min,
+                        max_value=max_date,
+                        value=max_date,
+                    )
+
+                if st.button("Prever", key="btn_predict_prophet"):
+                    with st.spinner("Processando..."):
+                        time.sleep(3)
+
+                        st.subheader(":green[Previsão]", divider="blue")
+
+                        st.markdown(
+                            f"**:green[LEMBRE-SE:] a previsão é feita com a data base em :green[{DATA_INICIAL.strftime('%d/%m/%Y')}] (último preço do barril de petróleo coletado).**"
+                        )
+
+                        self.predict(min, end_date)
+
+                        st.success("Processamento finalizado")
