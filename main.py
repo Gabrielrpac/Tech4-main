@@ -2,11 +2,9 @@ import streamlit as st
 from utilidades.const import TITULO_PRINCIPAL
 from utilidades.layout import output_layout
 import warnings
-import locale
 
 
 warnings.filterwarnings("ignore")
-locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")
 st.set_page_config(page_title=TITULO_PRINCIPAL, layout="wide")
 output_layout()
 
